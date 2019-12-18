@@ -28,14 +28,14 @@ const FriendList = (props) => {
 
     return (
 
-        <div>
+        <div className="container">
             {friends !== 'nodata' &&
                 (
 
                     friends.map((friend, index) => {
                         return (
                             <div className='card' key={friend.id}>
-                                <div>{friend.name}</div>
+                                <div className="title">{friend.name}</div>
                                 <div>{friend.age}</div>
                                 <div>{friend.email}</div>
                             </div>)
